@@ -1,0 +1,744 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0dfdb;
+    color: #333;
+}
+
+
+/* NAVBAR SECTION */
+
+.top-bar {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.top-bar .social-icons1 a {
+    color: white;
+    margin-right: 15px;
+}
+
+.top-bar .social-icons1 a:hover {
+    color: #fcc137;
+    margin-right: 15px;
+}
+
+.top-bar .extra-links a {
+    color: #fff;
+    margin-right: 20px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.top-bar .extra-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: #f4b41a;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-toggler {
+    font-size: 1.5rem;
+    color: black !important;
+    border: 1px solid black !important;
+    cursor: pointer;
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.phone-number {
+    color: #000000;
+    font-weight: bold;
+}
+
+.offcanvas {
+    background-color: #f4b41a !important;
+}
+
+.offcanvas .nav-link {
+    color: #000000;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+.offcanvas .nav-link:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+
+.Top-Content {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/IMAGES/background2.png') center / cover no-repeat;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Black overlay */
+.Top-Content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust opacity as needed */
+    z-index: 1;
+}
+
+/* Content on top of overlay */
+.Top-Content>div {
+    position: relative;
+    z-index: 2;
+}
+
+#TC-Logo {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.TC-Content h3 {
+    margin: 10px 0;
+}
+
+.TC-Button {
+    background-color: #f4b41a;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.TC-Button:hover {
+    background-color: #f4b41a;
+    color: white;
+}
+
+/* Practice Area Section */
+.practice-area {
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.practice-area h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Grid for the cards */
+.practice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Individual Card */
+.practice-card {
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 8px;
+}
+
+.practice-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(0.7);
+}
+
+.practice-card .card-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.practice-card:hover img {
+    filter: brightness(0.5);
+}
+
+/* Founder Message Section */
+.founder-section {
+    width: 100%;
+    color: white;
+}
+
+/* Header Styling */
+.founder-header {
+    background-color: #f4b41a;
+    padding: 15px;
+    font-size: 1.8rem;
+    color: #555;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Content Styling */
+.founder-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/IMAGES/background1.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    height: 70vh;
+}
+
+/* Founder Image */
+.founder-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.founder-image img {
+    width: 80%;
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Founder Text */
+.founder-text {
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+}
+
+.founder-text h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.founder-text h3 {
+    font-size: 1rem;
+    color: #b0b0b0;
+    margin: 10px 0 20px;
+    font-weight: normal;
+}
+
+.founder-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Header Section */
+
+.header {
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.header button {
+    padding: 10px 20px;
+    background-color: #f4b41a;
+    border: none;
+    cursor: pointer;
+}
+
+/* Practice Area Section */
+#practice-area {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.practice-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 150px;
+    height: 100px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Founder Message Section */
+#founder-message {
+    padding: 40px 20px;
+    background-color: #f4b41a;
+    color: #333;
+}
+
+/* .founder-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+} */
+
+.founder-content img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* Clients Section */
+#clients {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    background-color: #f4b41a;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact input,
+#contact textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
+
+#contact button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Section Styling */
+.clients-section {
+    background-color: #4d4d4d;
+    /* Dark gray background */
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    height: 40vh;
+}
+
+.clients-section h2 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.clients-section p {
+    margin: 20px 0 20px;
+    font-size: 0.9rem;
+}
+
+.clients-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.clients-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.clients-section p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.clients-carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+.clients-logos {
+    display: flex;
+    animation: scrollLogos 15s linear infinite;
+}
+
+.clients-logos img {
+    max-height: 80px;
+    /* Set the height of logos */
+    margin: 0 20px;
+    object-fit: contain;
+}
+
+@keyframes scrollLogos {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Carousel Styling */
+.clients-carousel {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.clients-logos {
+    display: inline-flex;
+    animation: scroll 20s linear infinite;
+}
+
+.clients-logos img {
+    width: 100px;
+    height: auto;
+    margin: 0 100px;
+    opacity: 0.8;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Hover effect */
+.clients-logos img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* General Section Styling */
+.contact-section {
+    display: flex;
+    height: 100vh;
+    /* Full viewport height */
+}
+
+/* Left Side Styling */
+.contact-left {
+    flex: 1;
+    background-image: url('/IMAGES/background3.png');
+    /* Use your background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-left h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* Right Side Styling */
+.contact-right {
+    flex: 1;
+    background-color: #009FFD;
+    /* Yellow background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+form {
+    width: 80%;
+    max-width: 400px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Small Contact Section Styling */
+.small-contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f4b41a;
+    /* Yellow background */
+    padding: 20px;
+}
+
+.contact-text {
+    font-size: 1.5rem;
+    color: #333;
+    margin-left: 150px;
+}
+
+.appointment-button {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.2;
+    width: 250px;
+    white-space: nowrap;
+}
+
+.appointment-button:hover {
+    background-color: #555;
+}
+
+
+/* FOOTER */
+
+#adbg {
+    background-color: #f4b41a;
+}
+
+.adtext {
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-spacing: 0.1rem;
+    margin: 0;
+}
+
+.footerbg .btn {
+    border-radius: 0;
+    font-family: "Futura ND";
+    font-size: 13px;
+    background-color: #000;
+}
+
+@media (max-width: 790px) {
+    .adtext {
+        font-size: 1.2rem;
+    }
+
+    .footerbg .btn {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 595px) {
+    .adtext {
+        font-size: 1rem;
+    }
+
+    .footerbg .btn {
+        font-size: 11px;
+    }
+}
+
+.footerbg .icon {
+    color: #f4b41a !important;
+}
+
+.footerbg {
+    background-color: black;
+}
+
+.practice {
+    color: #f4b41a;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Futura ND";
+    font-style: normal;
+}
+
+.footerbg span {
+    font-family: "Futura ND";
+}
+
+.news {
+    color: #f4b41a;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Futura ND";
+    font-style: normal;
+}
+
+.footerbg .signup {
+    font-family: "Futura ND";
+}
+
+.email {
+    max-width: 400px;
+    /* Adjust the width as needed */
+    background-color: #000;
+    /* Set the input section background color */
+    border: 1px solid #fff;
+    /* White border for the input section */
+    display: flex;
+}
+
+.email input {
+    border: none;
+    flex-grow: 1;
+    padding: 10px;
+    outline: none;
+    background-color: #272727;
+    /* Input background black */
+    color: #fff;
+    /* Input text color white */
+    border-radius: 0;
+    /* Remove border-radius */
+}
+
+.email .arrow {
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.arrowbg {
+    background-color: #f4b41a;
+    padding: 8px 12px;
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+}
+
+.arrowbg:hover {
+    background-color: #c7a24b;
+    /* Slightly darker on hover */
+}
+
+.email input::placeholder {
+    color: rgb(128, 128, 128);
+    font-family: "Futura ND";
+}
+
+.lineofemail {
+    font-family: "Futura ND";
+}
+
+.footer p {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #f4b41a;
+    /* Gold background for icons */
+    color: #fff;
+    font-size: 18px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #c7a24b;
+    /* Slightly darker gold on hover */
+}
+
+.social-icons i {
+    font-size: 22px;
+}
+
+/* responsive */
+
+.centa .containers {
+    padding: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+    .centa .containers {
+        padding: 0 20%;
+        /* Use percentage for responsive padding */
+    }
+}

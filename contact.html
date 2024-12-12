@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafiz Abdul Baqi & Co - Contact us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        /* NAVBAR SECTION */
+
+        .top-bar {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .top-bar .social-icons1 a {
+            color: white;
+            margin-right: 15px;
+        }
+
+        .top-bar .social-icons1 a:hover {
+            color: #fcc137;
+            margin-right: 15px;
+        }
+
+        .top-bar .extra-links a {
+            color: #fff;
+            margin-right: 20px;
+            font-size: 0.9rem;
+            text-decoration: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .top-bar .extra-links a:hover {
+            text-decoration: underline;
+        }
+
+        .navbar {
+            background-color: #f4b41a;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar-brand img {
+            height: 40px;
+        }
+
+        .navbar-toggler {
+            font-size: 1.5rem;
+            color: black !important;
+            border: 1px solid black !important;
+            ;
+            cursor: pointer;
+        }
+
+        .navbar-nav .nav-link {
+            color: #000000;
+            font-weight: 500;
+            margin-right: 15px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: white;
+        }
+
+        .phone-number {
+            color: #000000;
+            font-weight: bold;
+        }
+
+        .offcanvas {
+            background-color: #f4b41a !important;
+        }
+
+        .offcanvas .nav-link {
+            color: #000000;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+        }
+
+        .offcanvas .nav-link:hover {
+            background-color: #222;
+            color: #fff;
+        }
+
+
+
+        /* TOP SECTION */
+
+        .parallox {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/free-photo/close-up-justice-building_23-2151889566.jpg?t=st=1732320820~exp=1732324420~hmac=bbe5b3e4045a53e49f7a50a48e14398d15f20b467c9519daea3f33b9c5919b89&w=1380');
+            width: 100%;
+            height: 30rem;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .heading {
+            font-family: "Playfair Display", serif;
+            font-size: 4rem;
+            font-weight: 600;
+        }
+
+        .para {
+            font-size: 1.5rem;
+        }
+
+        /* INFORMATION */
+
+        .inform {
+            background-color: #fcc137;
+        }
+
+        .heading1 {
+            font-family: "Poppins", sans-serif;
+            /* font-size: 1.9rem;
+            font-weight: 500; */
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        .para1 {
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .no {
+            color: #009FFD;
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /* FORM */
+
+        .backco {
+            background-color: #e6e6e6;
+        }
+
+        .form-control {
+            background-color: white;
+            border: none;
+            border-radius: 0;
+        }
+
+        .line {
+            height: 3.9rem;
+        }
+
+        .form-control::placeholder {
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #888;
+            font-size: 1rem;
+        }
+
+        form .btn {
+            border-radius: 0;
+            font-family: "Poppins", serif;
+            font-weight: 600;
+            font-style: normal;
+            color: white;
+            font-size: 1rem;
+        }
+
+        /* FOOTER */
+
+        #adbg {
+            background-color: #f4b41a;
+        }
+
+        .adtext {
+            font-size: 1.3rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            word-spacing: 0.1rem;
+            margin: 0;
+        }
+
+        .footerbg .btn {
+            border-radius: 0;
+            font-family: "Futura ND";
+            font-size: 13px;
+            background-color: #000;
+        }
+
+        @media (max-width: 790px) {
+            .adtext {
+                font-size: 1.2rem;
+            }
+
+            .footerbg .btn {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 595px) {
+            .adtext {
+                font-size: 1rem;
+            }
+
+            .footerbg .btn {
+                font-size: 11px;
+            }
+        }
+
+        .footerbg .icon {
+            color: #f4b41a !important;
+        }
+
+        .footerbg {
+            background-color: black;
+        }
+
+        .practice {
+            color: #f4b41a;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: "Futura ND";
+            font-style: normal;
+        }
+
+        .footerbg span {
+            font-family: "Futura ND";
+        }
+
+        .news {
+            color: #f4b41a;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: "Futura ND";
+            font-style: normal;
+        }
+
+        .footerbg .signup {
+            font-family: "Futura ND";
+        }
+
+        .email {
+            max-width: 400px;
+            /* Adjust the width as needed */
+            background-color: #000;
+            /* Set the input section background color */
+            border: 1px solid #fff;
+            /* White border for the input section */
+            display: flex;
+        }
+
+        .email input {
+            border: none;
+            flex-grow: 1;
+            padding: 10px;
+            outline: none;
+            background-color: #272727;
+            /* Input background black */
+            color: #fff;
+            /* Input text color white */
+            border-radius: 0;
+            /* Remove border-radius */
+        }
+
+        .email .arrow {
+            display: flex;
+            align-items: center;
+            border: none;
+        }
+
+        .arrowbg {
+            background-color: #f4b41a;
+            padding: 8px 12px;
+            border: 1px solid white;
+            cursor: pointer;
+            color: white;
+        }
+
+        .arrowbg:hover {
+            background-color: #c7a24b;
+            /* Slightly darker on hover */
+        }
+
+        .email input::placeholder {
+            color: rgb(128, 128, 128);
+            font-family: "Futura ND";
+        }
+
+        .lineofemail {
+            font-family: "Futura ND";
+        }
+
+        .footer p {
+            margin: 0;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .social-icons li {
+            margin-right: 10px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #f4b41a;
+            /* Gold background for icons */
+            color: #fff;
+            font-size: 18px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            background-color: #c7a24b;
+            /* Slightly darker gold on hover */
+        }
+
+        .social-icons i {
+            font-size: 22px;
+        }
+
+        /* responsive */
+
+        .centa .containers {
+            padding: 0px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .centa .containers {
+                padding: 0 20%;
+                /* Use percentage for responsive padding */
+            }
+        }
+    </style>
+
+
+    <!-- NAVBAR SECTION -->
+
+    <div class="top-bar d-none d-lg-flex justify-content-between align-items-center px-3">
+        <div class="social-icons1">
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="extra-links">
+            <a href="privacypolicy.html">Privacy Policy</a>
+            <a href="requestquote.html">Request Quote</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html"><img src="IMAGES/MAINLOGO.png" width="170px" height="120px"
+                alt="Hafiz Abdul Baqi & Co"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="practiceareas.html">Practice Areas</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+            </ul>
+            <span class="phone-number d-none d-lg-block"><i class="fas fa-phone-alt"></i> +1 200 300 9000</span>
+        </div>
+    </nav>
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-dark" id="offcanvasRightLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset text-light" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="practiceareas.html">Practice Areas</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- TOP SECTION -->
+
+    <div class="parallox">
+        <h1 class="heading">Contact us</h1>
+        <p class="para">Get Intouch</p>
+    </div>
+
+    <!-- INFORMATION -->
+
+    <div class="container-fluid inform">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 p-4 px-5">
+                    <i class="fa-solid fa-phone fs-1 mb-3"></i>
+                    <h3 class="heading1">Phone</h3>
+                    <p class="para1">A wonderful serenity has taken possession of my entire soul, like these.</p>
+                    <p class="no">+1-000-000-0000</p>
+                </div>
+                <div class="col-md-4 p-4 px-5">
+                    <i class="fa-regular fa-envelope fs-1 mb-3"></i>
+                    <h3 class="heading1">Email</h3>
+                    <p class="para1">A wonderful serenity has taken possession of my entire soul, like these.</p>
+                    <p class="no">email@domain.com</p>
+                </div>
+                <div class="col-md-4 p-4 px-5">
+                    <i class="fa-solid fa-location-dot fs-1 mb-3"></i>
+                    <h3 class="heading1">Location</h3>
+                    <p class="para1">123 Placeholder Street, Sample City, XYZ 00000</p>
+                    <p class="no">View On Google Map</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FORM -->
+
+    <div class="container-fluid py-5 backco">
+        <div class="row d-flex justify-content-center align-items-center pb-5">
+            <div class="col-md-5">
+                <h1 class="text-center heading1 fs-1">Leave us your info</h1>
+                <p class="text-center para1 fs-5">and we will get back to you.</p>
+
+                <form action="submit">
+                    <div class="form-group mb-4">
+                        <input type="text" class="form-control line" id="name" placeholder="Full Name*" required>
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="email" class="form-control line" id="email" placeholder="Email*" required>
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="tel" class="form-control line" id="phone" placeholder="Subject*" required>
+                    </div>
+                    <div class="form-group mb-4">
+                        <textarea class="form-control" id="message" placeholder="Message*" rows="7" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark w-100 line">SUBMIT NOW</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mb-5">
+        <div class="row">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7172.540382942969!2d67.07314367520407!3d24.830969278834697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33c6b03254785%3A0x1b2a58aef179afe2!2sAptech%20Defence%20Center!5e0!3m2!1sen!2s!4v1732326160618!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footerbg">
+        <div class="container-fluid d-md-flex flex-md-row flex-column align-items-center text-center text-md-start justify-content-center justify-content-md-between px-lg-5 px-md-2 py-md-4 py-3 py-lg-4"
+            id="adbg">
+            <p class="text-white adtext mb-md-0 mb-2">Contact Us Now! Get a Free Consultation for Your Case.</p>
+            <button class="btn p-2 btn-dark">MAKE APPOINTMENT</button>
+        </div>
+        <div class="centa">
+
+            <div class="container-xl p-md-3  container-md-fluid containers footerbg">
+                <div class="row mt-5">
+                    <div class="col-md-4 pe-0 d-flex flex-column text-white">
+                        <img src="IMAGES/logo.png" width="180px" alt="logo" class="mb-4">
+                        <div class="d-flex align-items-start mb-2">
+                            <i class="icon fa-solid fa-location-dot me-2 pt-1"></i>
+                            <span>1234 Main St, Springfield</span>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="icon fa-solid fa-phone-volume me-2"></i>
+                            <span>(555) 123-4567</span>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="icon fa-solid fa-envelope me-2"></i>
+                            <span>example@email.com</span>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <i class="icon fa-solid fa-file me-2"></i>
+                            <span>Document.pdf</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ps-2 ps-md-0">
+                        <div class="text-white mt-lg-0">
+                            <p class="practice mt-md-0 mt-3">Practice Areas</p>
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa-solid fa-check me-3 icon"></i>
+                                <span>Family Law</span>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa-solid fa-check me-3 icon"></i>
+                                <span>Criminal Defense</span>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa-solid fa-check me-3 icon"></i>
+                                <span>Corporate Law</span>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa-solid fa-check me-3 icon"></i>
+                                <span>Real Estate Law</span>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa-solid fa-check me-3 icon"></i>
+                                <span>Intellectual Property</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ps-md-0">
+                        <p class="news mb-2">Newsletter</p>
+                        <p class="text-white signup mb-2">Signup for our newsletter to get the latest news,<span
+                                class="brr d-xl-block d-none"></span> updates and special offers in your inbox.</p>
+                        <div class="ms-lg-0 email d-flex align-items-center justify-content-start">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <span>
+                                <div class="arrow m-0 p-0">
+                                    <i class="fa-solid fa-arrow-right-long px-3 fs-3 arrowbg"></i>
+                                </div>
+                            </span>
+                        </div>
+                        <div id="emailHelp" class="form-text text-white lineofemail mt-lg-3 mt-2">We'll never share your
+                            email with anyone else.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-5 mb-2" style="color: gray;">
+        <footer class="footer text-white py-3 mb-1">
+            <div class="container-fluid d-md-flex text-center justify-content-between align-items-center">
+                <p class="mb-0">© Copyright 2024 - Justica by Designesia</p>
+                <ul class="social-icons d-flex mt-4 mt-md-0 justify-content-center list-unstyled mb-0">
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li><a href="https://www.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                    </li>
+                    <li><a href="https://www.rss.com" target="_blank"><i class="fa-solid fa-rss"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

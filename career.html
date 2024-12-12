@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafiz Abdul Baqi & Co - Career</title>
+    <link rel="stylesheet" href="CSS/career.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Actor&family=Adamina&family=Allerta&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Castoro:ital@0;1&family=DM+Serif+Display:ital@0;1&family=Domine:wght@400..700&family=Gabarito:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="top-bar d-none d-lg-flex justify-content-between align-items-center px-3">
+        <div class="social-icons1">
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="extra-links">
+            <a href="privacypolicy.html">Privacy Policy</a>
+            <a href="requestquote.html">Request Quote</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark px-3">
+        <a class="navbar-brand" href="index.html"><img src="IMAGES/MAINLOGO.png" width="170px" height="120px"
+                alt="Hafiz Abdul Baqi & Co"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="practiceareas.html">Practice Areas</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+            </ul>
+            <span class="phone-number d-none d-lg-block"><i class="fas fa-phone-alt"></i> +1 200 300 9000</span>
+        </div>
+    </nav>
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-dark" id="offcanvasRightLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset text-light" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="practiceareas.html">Practice Areas</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- Job Listings Section -->
+    <section class="job-listings">
+        <h2>Current Openings</h2>
+        <div class="job-container">
+            <div class="job d-flex flex-column">
+                <img src="IMAGES/pic1.png" alt="Associate Lawyer Image" class="job-img">
+                <div class="job-content">
+                    <h3>Associate Lawyer</h3>
+                    <p>Seeking an experienced Associate Lawyer for civil litigation.</p>
+                    <button class="btn-details" onclick="openModal('associateLawyer')">View Details</button>
+                </div>
+            </div>
+            <div class="job  d-flex flex-column">
+                <img src="IMAGES/pic2.png" alt="Legal Research Assistant Image" class="job-img">
+                <div class="job-content">
+                    <h3>Legal Research Assistant</h3>
+                    <p>Assist our attorneys in legal research and case analysis.</p>
+                    <button class="btn-details" onclick="openModal('legalResearch')">View Details</button>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <h2>Why Work with Us?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">Competitive Salary</div>
+            <div class="benefit-card">Health Benefits</div>
+            <div class="benefit-card">Professional Growth</div>
+            <div class="benefit-card">Flexible Hours</div>
+        </div>
+    </section>
+
+    <!-- Application Steps Section -->
+    <section class="apply-steps">
+        <h2>How to Apply</h2>
+        <div class="steps">
+            <p><span>1.</span> Select an open position.</p>
+            <p><span>2.</span> Prepare your resume and cover letter.</p>
+            <p><span>3.</span> Submit your Resume at <b>yasirsoodraghib@gmail.com</b></p>
+        </div>
+    </section>
+
+    <!-- Modal Container -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="job-title">Job Title</h3>
+            <p id="job-description">Here will be the detailed description of the selected job position.</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footerbg">
+        <div class="container-fluid d-md-flex flex-md-row flex-column align-items-center text-center text-md-start justify-content-center justify-content-md-between px-lg-5 px-md-2 py-md-4 py-3 py-lg-4"
+            id="adbg">
+            <p class="text-white adtext mb-md-0 mb-2">Contact Us Now! Get a Free Consultation for Your Case.</p>
+            <button class="btn p-2 btn-dark">MAKE APPOINTMENT</button>
+        </div>
+        <div class="centa">
+
+            <div class="container-xl p-md-3  container-md-fluid containers footerbg">
+                <div class="row mt-5">
+                    <div class="col-md-4 pe-0 d-flex flex-column text-white">
+                        <img src="IMAGES/logo.png" width="180px" alt="logo" class="mb-4">
+                        <div class="d-flex align-items-start mb-2">
+                            <i class="icon fa-solid fa-location-dot me-2 pt-1"></i>
+                            <span>1234 Main St, Springfield</span>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="icon fa-solid fa-phone-volume me-2"></i>
+                            <span>(555) 123-4567</span>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="icon fa-solid fa-envelope me-2"></i>
+                            <span>example@email.com</span>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <i class="icon fa-solid fa-file me-2"></i>
+                            <span>Document.pdf</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ps-2 ps-md-0">
+                        <div class="text-white mt-lg-0">
+                            <p class="practice mt-md-0 mt-3">Practice Areas</p>
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa-solid fa-check me-3 icon"></i>
+                                <span>Family Law</span>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa-solid fa-check me-3 icon"></i>
+                                <span>Criminal Defense</span>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa-solid fa-check me-3 icon"></i>
+                                <span>Corporate Law</span>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa-solid fa-check me-3 icon"></i>
+                                <span>Real Estate Law</span>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fa-solid fa-check me-3 icon"></i>
+                                <span>Intellectual Property</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ps-md-0">
+                        <p class="news mb-2">Newsletter</p>
+                        <p class="text-white signup mb-2">Signup for our newsletter to get the latest news,<span
+                                class="brr d-xl-block d-none"></span> updates and special offers in your inbox.</p>
+                        <div class="ms-lg-0 email d-flex align-items-center justify-content-start">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <span>
+                                <div class="arrow m-0 p-0">
+                                    <i class="fa-solid fa-arrow-right-long px-3 fs-3 arrowbg"></i>
+                                </div>
+                            </span>
+                        </div>
+                        <div id="emailHelp" class="form-text text-white lineofemail mt-lg-3 mt-2">We'll never share your
+                            email with anyone else.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-5 mb-2" style="color: gray;">
+        <footer class="footer text-white py-3 mb-1">
+            <div class="container-fluid d-md-flex text-center justify-content-between align-items-center">
+                <p class="mb-0">© Copyright 2024 - Justica by Designesia</p>
+                <ul class="social-icons d-flex mt-4 mt-md-0 justify-content-center list-unstyled mb-0">
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li><a href="https://www.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                    </li>
+                    <li><a href="https://www.rss.com" target="_blank"><i class="fa-solid fa-rss"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </footer>
+
+    <script>
+        // Open Modal Function
+        function openModal(job) {
+            const modal = document.getElementById("modal");
+            const jobTitle = document.getElementById("job-title");
+            const jobDescription = document.getElementById("job-description");
+
+            // Set job details based on the job clicked
+            if (job === 'associateLawyer') {
+                jobTitle.textContent = "Associate Lawyer";
+                jobDescription.textContent = "Detailed information about the Associate Lawyer position goes here, including responsibilities, qualifications, and benefits.";
+            } else if (job === 'legalResearch') {
+                jobTitle.textContent = "Legal Research Assistant";
+                jobDescription.textContent = "Detailed information about the Legal Research Assistant position, including tasks, requirements, and additional details.";
+            }
+
+            // Use a timeout to allow the opacity transition to occur
+            modal.style.display = "flex"; // Set to flex first to enable visibility
+            setTimeout(() => {
+                modal.classList.add("show"); // Add the show class after a slight delay
+            }, 10);
+        }
+
+        // Close Modal Function
+        function closeModal() {
+            const modal = document.getElementById("modal");
+            modal.classList.remove("show");
+            // Remove the display after the transition ends
+            setTimeout(() => {
+                modal.style.display = "none";
+            }, 300); // Match this time with the CSS transition duration
+        }
+
+        // Close modal if user clicks outside of the modal content
+        window.onclick = function (event) {
+            const modal = document.getElementById("modal");
+            if (event.target === modal) {
+                closeModal();
+            }
+        };
+
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
