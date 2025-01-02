@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #e0dfdb;
@@ -141,10 +140,11 @@ body {
 }
 
 /* Practice Area Section */
+
 .practice-area {
-    padding: 50px;
+    padding: 0px;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     margin-top: 50px;
 }
 
@@ -154,19 +154,27 @@ body {
     color: #555;
 }
 
-/* Grid for the cards */
+/* Grid for cards */
 .practice-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the cards */
+    gap: 20px; /* Spacing between cards */
 }
 
-/* Individual Card */
+/* Card Styling */
 .practice-card {
-    position: relative;
-    overflow: hidden;
+    width: 25rem; /* Fixed card width */
     background-color: #333;
     border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.practice-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 .practice-card img {
@@ -174,6 +182,11 @@ body {
     height: auto;
     display: block;
     filter: brightness(0.7);
+    transition: filter 0.3s ease-in-out;
+}
+
+.practice-card:hover img {
+    filter: brightness(0.5);
 }
 
 .practice-card .card-title {
@@ -185,11 +198,21 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    z-index: 1;
 }
 
-.practice-card:hover img {
-    filter: brightness(0.5);
+/* Media Query for Responsive Layout */
+@media (max-width: 992px) {
+    .practice-grid {
+        justify-content: center;
+    }
+    .practice-card {
+        width: 100%; /* Full width for smaller screens */
+        max-width: 20rem; /* Limit the width */
+    }
 }
+
 
 /* Founder Message Section */
 .founder-section {
@@ -210,19 +233,30 @@ body {
 /* Content Styling */
 .founder-content {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background-image: url('/IMAGES/background1.png');
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 20px;
-    height: 70vh;
+    padding: 5rem 15rem !important;
+}
+
+@media screen and (max-width: 1500px) {
+    .founder-content {
+        padding: 0 !important ;
+    }
+
+    .founder-text p {
+      margin-bottom: 0.5rem !important;
+    }
+    
 }
 
 /* Founder Image */
 .founder-image {
-    flex: 1;
+    flex: 1 1 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,7 +264,7 @@ body {
 }
 
 .founder-image img {
-    width: 80%;
+    width: 100% !important;
     max-width: 300px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -238,9 +272,9 @@ body {
 
 /* Founder Text */
 .founder-text {
-    flex: 2;
+    flex: 1 1 100%;
     padding: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .founder-text h2 {
@@ -262,79 +296,134 @@ body {
     margin-bottom: 20px;
 }
 
-/* Header Section */
+@media screen and (max-width: 450px) {
 
-.header {
-    color: white;
+    .founder-image img {
+        width: 80% !important;
+    }
+
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .founder-content {
+        flex-wrap: nowrap;
+    }
+
+    .founder-image, .founder-text {
+        flex: 1 1 50%;
+    }
+
+    .founder-text {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .founder-content {
+        padding: 40px;
+    }
+
+    .founder-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .founder-text h3 {
+        font-size: 1.2rem;
+    }
+
+    .founder-text p {
+        font-size: 1.2rem;
+    }
+}
+
+/* client-section */
+
+.clients-section {
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 0;
 }
 
-.header h1 {
-    font-size: 2.5rem;
+.clients-section h2 {
+    font-size: 2rem;
+    color: #011638; /* Adjust color as needed */
+    margin-bottom: 10px;
 }
 
-.header button {
-    padding: 10px 20px;
-    background-color: #f4b41a;
-    border: none;
-    cursor: pointer;
+.clients-section p {
+    font-size: 1.2rem;
+    color: #f6ab13; /* Adjust color as needed */
+    margin-bottom: 30px;
 }
 
-/* Practice Area Section */
-#practice-area {
-    padding: 40px 20px;
-    text-align: center;
-    background-color: #f0f0f0;
+.clients-carousel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
 }
 
-.practice-cards {
+.clients-logos {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    gap: 6rem !important;
+    animation: scrollLogos 15s linear infinite;
 }
 
-.card {
-    width: 150px;
-    height: 100px;
-    background-color: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border-radius: 5px;
+.clients-logos img {
+    width: 150px; /* Set the width of logos */
+    height: auto;
+    display: inline-block;
 }
 
-/* Founder Message Section */
-#founder-message {
-    padding: 40px 20px;
-    background-color: #f4b41a;
-    color: #333;
+/* Animation for scrolling logos */
+@keyframes scrollLogos {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-25%); /* Adjust the scroll speed */
+    }
+    100% {
+        transform: translateX(-50%); /* Adjust the scroll speed */
+    }
 }
 
-/* .founder-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-} */
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .clients-logos {
+        gap: 20px;
+    }
 
-.founder-content img {
-    width: 100px;
-    border-radius: 50%;
+    .clients-logos img {
+        width: 120px; /* Reduce logo width for tablets */
+    }
 }
 
-/* Clients Section */
-#clients {
-    padding: 40px 20px;
-    text-align: center;
+@media (max-width: 768px) {
+    .clients-logos {
+        gap: 15px;
+    }
+
+    .clients-logos img {
+        width: 100px; /* Reduce logo width for mobile screens */
+    }
+    .clients-section {
+        text-align: center;
+        padding: 40px 10px;
+    }
 }
 
-.client-logos {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+@media (max-width: 480px) {
+    .clients-logos {
+        gap: 10px; /* Smaller gap for very small screens */
+    }
+
+    .clients-logos img {
+        width: 80px; /* Even smaller logos for very small screens */
+    }
 }
+
 
 /* Contact Section */
 #contact {
@@ -363,110 +452,7 @@ body {
     cursor: pointer;
 }
 
-/* Section Styling */
-.clients-section {
-    background-color: #4d4d4d;
-    /* Dark gray background */
-    color: white;
-    text-align: center;
-    padding: 60px 0;
-    height: 40vh;
-}
 
-.clients-section h2 {
-    font-size: 2rem;
-    margin: 0;
-    font-weight: bold;
-}
-
-.clients-section p {
-    margin: 20px 0 20px;
-    font-size: 0.9rem;
-}
-
-.clients-section {
-    text-align: center;
-    padding: 40px 0;
-    background-color: #f9f9f9;
-}
-
-.clients-section h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.clients-section p {
-    font-size: 1.2rem;
-    color: #777;
-    margin-bottom: 30px;
-}
-
-.clients-carousel {
-    overflow: hidden;
-    position: relative;
-}
-
-.clients-logos {
-    display: flex;
-    animation: scrollLogos 15s linear infinite;
-}
-
-.clients-logos img {
-    max-height: 80px;
-    /* Set the height of logos */
-    margin: 0 20px;
-    object-fit: contain;
-}
-
-@keyframes scrollLogos {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-
-/* Carousel Styling */
-.clients-carousel {
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    width: 100%;
-}
-
-.clients-logos {
-    display: inline-flex;
-    animation: scroll 20s linear infinite;
-}
-
-.clients-logos img {
-    width: 100px;
-    height: auto;
-    margin: 0 100px;
-    opacity: 0.8;
-    transition: transform 0.3s, opacity 0.3s;
-}
-
-/* Hover effect */
-.clients-logos img:hover {
-    transform: scale(1.1);
-    opacity: 1;
-}
-
-/* Animation */
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-}
 
 /* General Section Styling */
 .contact-section {
@@ -486,6 +472,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-left {
+        height: 18rem !important;
+    }
 }
 
 .contact-left h2 {
@@ -738,7 +730,114 @@ form button:hover {
 
 @media only screen and (max-width: 767px) {
     .centa .containers {
-        padding: 0 20%;
+        padding: 0 15%;
         /* Use percentage for responsive padding */
+    }
+}
+
+/* Navbar adjustments for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+    .navbar-toggler {
+        font-size: 1.2rem;
+    }
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+}
+
+/* Top-Content Section responsiveness */
+@media (max-width: 768px) {
+    .Top-Content {
+        height: 400px;
+        padding: 20px;
+    }
+    .Top-Content h3 {
+        font-size: 1.5rem;
+    }
+    #TC-Logo {
+        width: 200px;
+    }
+}
+
+/* Practice Area grid for smaller screens */
+@media (max-width: 768px) {
+    .practice-grid {
+        grid-template-columns: 1fr; /* Stack the cards vertically */
+    }
+    .practice-card .card-title {
+        font-size: 1rem; /* Smaller font size */
+    }
+}
+
+/* Founder Section responsiveness */
+@media (max-width: 768px) {
+    .founder-content {
+        flex-direction: column; /* Stack the image and text */
+        padding: 15px;
+    }
+    .founder-image img {
+        width: 60%;
+        max-width: 200px;
+    }
+    .founder-text h2 {
+        font-size: 1.6rem;
+    }
+    .founder-text h3 {
+        font-size: 1rem;
+    }
+    .founder-text p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Contact Section responsiveness */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+    .contact-left, .contact-right {
+        flex: none;
+        width: 100%;
+        height: auto;
+    }
+    .contact-left h2 {
+        font-size: 2rem;
+    }
+    form input, form textarea {
+        font-size: 0.9rem;
+    }
+    form button {
+        font-size: 1rem;
+    }
+}
+
+/* Small Contact Section adjustments */
+@media (max-width: 768px) {
+    .small-contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-text {
+        font-size: 1.2rem;
+    }
+    .appointment-button {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+/* Footer responsiveness */
+@media (max-width: 768px) {
+    .footerbg {
+        padding: 20px;
+    }
+    .adtext {
+        font-size: 1rem;
+    }
+    .footerbg .btn {
+        font-size: 12px;
     }
 }
