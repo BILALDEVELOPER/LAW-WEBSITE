@@ -90,7 +90,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('../IMAGES/background2.png') center / cover no-repeat;
+    background: url('../IMAGES/background2.avif') center / cover no-repeat;
     color: white;
     text-align: center;
     overflow: hidden;
@@ -236,7 +236,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-image: url('../IMAGES/background2.avif');
+    background-image: url('../IMAGES/background1.png');
     background-size: cover;
     background-position: center;
     color: white;
