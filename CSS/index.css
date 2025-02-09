@@ -236,7 +236,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-image: url('/IMAGES/background1.png');
+    background-image: url('../IMAGES/background1.png');
     background-size: cover;
     background-position: center;
     color: white;
