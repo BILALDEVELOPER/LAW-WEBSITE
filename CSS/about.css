@@ -88,7 +88,7 @@
     width: 100%;
     height: 400px;
     /* Default height for larger screens */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/IMAGES/hero-section-aboutus.avif');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../IMAGES/hero-section-aboutus.avif');
     background-position: center center;
     background-blend-mode: darken;
     background-repeat: no-repeat;
@@ -291,7 +291,7 @@
 /* PARALLOX SECTION */
 
 .parallox {
-    background-image: url(/IMAGES/parallox.jpg);
+    background-image: url('../IMAGES/parallox.jpg');
     width: 100%;
     height: 450px;
     background-position: center center;
@@ -476,7 +476,7 @@
 }
 
 .consultimg {
-    background-image: url(/IMAGES/consultback.png);
+    background-image: url('../IMAGES/consultback.png');
     background-size: cover;
     background-position: center center;
 }
